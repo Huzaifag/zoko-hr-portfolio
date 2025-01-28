@@ -29,37 +29,80 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  background : transparent;
-  color:var(--secondary-color);
+  background: transparent;
+  color: var(--secondary-color);
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
 }
+
 .navbar a {
-  color:var(--secondary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
+  position: relative;
 }
 
-.logo{
+.logo {
   font-family: var(--logo-font);
   font-size: 24px;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.nav-links{
+.nav-links {
   text-transform: uppercase;
+  display: flex;
+  gap: 20px;
 }
-.nav-links a:hover{
-  color: var(--primary-color); 
+
+.nav-links a:hover {
+  color: var(--primary-color);
   text-decoration: underline;
   transition: 0.3s ease-in-out;
 }
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Show below the parent link */
+  left: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .carousel {
   position: relative;
   width: 100%;
@@ -156,7 +199,7 @@ header{
 .slide-heading {
 position: absolute;
 top: 40%;
-left: 50%;
+left: 40%;
 transform: translate(-50%, -50%);
 text-align: center;
 color:var(--primary-color); 
@@ -165,6 +208,12 @@ max-width: 800px;
 padding: 15px;
 background:var(--secondary-color);
 border-radius: 10px;
+height: 280px;
+width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .slide-heading h1 {

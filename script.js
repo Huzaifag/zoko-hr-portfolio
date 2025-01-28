@@ -36,7 +36,7 @@ const slides = document.querySelectorAll('.slide');
       // Animate pillars to reveal the slide
       gsap.to(pillars, {
         scaleX: 0,
-        duration: 0.6,
+        duration: 2,
         stagger: 0.2,
         ease: 'power2.inOut',
         onComplete: () => {
