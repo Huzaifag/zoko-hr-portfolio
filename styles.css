@@ -17,6 +17,12 @@ font-family: Arial, sans-serif;
 overflow-x: hidden;  /* Changed from overflow: hidden */
 overflow-y: auto;    /* Allow vertical scrolling */
 }
+header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 .navbar {
   position: absolute;
   top: 0;
@@ -551,4 +557,94 @@ max-width: 700px;
 .popular-links button:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.main-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  
+}
+
+
+.main-navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.main-navbar ul li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.main-navbar ul li a:hover{
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.active{
+  color: var(--link-color) !important;
+}
+
+.main-logo{
+  font-size: 30px;
+  font-family: var(--logo-font);
+}
+
+.about-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.banner{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+}
+
+.container{
+  margin-left: 20px;
+}
+
+.container h3{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: var(--text-font);
+}
+
+.breadcrumb{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.breadcrumb p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.breadcrumb p a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
