@@ -266,21 +266,16 @@ background-size: cover;
   min-height: 100vh;
 }
 
-.service-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.section-content, .service-section-content {
+.section-content {
   padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
 }
 
-.service-section-content{
-  max-width: 80%;
-}
+
 
 .section-content h1, .service-section-content h1 {
   font-size: 2.5rem;
@@ -795,4 +790,145 @@ max-width: 700px;
 
 .glance-container {
   gap: 20px
+}
+
+.service-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 10px;
+  width: 100%;
+}
+
+.service-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px; /* Ensures a nice central alignment */
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Left Content (Text) */
+.service-section-heading {
+  flex: 1; /* Takes equal space as form */
+  max-width: 600px;
+}
+
+.service-section-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: var(--text-font);
+  color: var(--primary-color);
+}
+
+.service-section-heading p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+/* Right Content (Form) */
+.service-section-form {
+  flex: 1; /* Takes equal space as content */
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.service-section-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-section-form textarea,
+.service-section-form input,
+.service-section-form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.service-section-form button {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-section-form button:hover {
+  background: var(--highlight-color);
+  transform: scale(1.05);
+}
+
+.build-team{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 10px 40px;
+  height: 300px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.build-team h3{
+  font-size: 2.5rem;
+  font-family: var(--text-font);
+}
+
+.build-team p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.build-team a{
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.build-team a:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .service-section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-section-heading,
+  .service-section-form {
+    max-width: 90%;
+  }
 }
