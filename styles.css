@@ -260,19 +260,38 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-.section-1, .section-2 {
+.section-1, .section-2, .service-section {
   padding: 50px 20px 20px 10px;
   max-width: 100%;
   min-height: 100vh;
 }
 
-.section-content{
+.service-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.section-content, .service-section-content {
   padding-left: 60px;
 }
 
-.section-content h1 {
-font-size: 16px;
-margin-bottom: 22px;
+.service-section-content{
+  max-width: 80%;
+}
+
+.section-content h1, .service-section-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: var(--text-font);
+  color: var(--primary-color);
+}
+ .service-section-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
 }
 
 .section-content p {
