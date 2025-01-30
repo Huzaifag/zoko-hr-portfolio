@@ -103,3 +103,12 @@ blogCards.forEach((card) => {
   });
 });
     
+
+function toggleMenu() {
+  const menu = document.querySelector('.mobile-navbar');
+  if (menu.style.display !== 'flex') {
+    menu.style.display = 'flex';
+  } else {
+    menu.style.display = 'none';
+  }
+}

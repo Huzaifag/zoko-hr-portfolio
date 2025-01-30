@@ -44,7 +44,7 @@ header{
   color: var(--secondary-color);
   text-decoration: none;
   margin: 0 15px;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -59,8 +59,76 @@ header{
 .nav-links {
   text-transform: uppercase;
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
+.mobile-nav-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-nav-links a{
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#close-menu{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.toggle-menu{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.toggle-menu-button {
+  font-size: 24px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-navbar {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.3s ease;
+}
+.mobile-logo {
+  font-family: var(--logo-font);
+  font-size: 24px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.close-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 10000;
+}
+
 
 .nav-links a:hover {
   color: var(--primary-color);
@@ -1039,5 +1107,21 @@ a strong{
   .service-section-heading,
   .service-section-form {
     max-width: 90%;
+  }
+
+  .toggle-menu-button {
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .slide-heading{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .slide-cards-container{
+    display: none;
   }
 }

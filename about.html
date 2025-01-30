@@ -9,57 +9,79 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">Pearlina</div>
-    <div class="nav-links">
-      <div class="dropdown">
-        <a href="about.html" class="active">About</a>
-        <div class="dropdown-content">
-          <a href="about.html">Company overview</a>
-        </div>
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="logo">Pearlina</div>
+  <div class="nav-links">
+    <div class="dropdown">
+      <a href="about.html" class="active">About</a>
+      <div class="dropdown-content">
+        <a href="about.html" class="active">Company overview</a>
       </div>
-      <div class="dropdown">
-        <a href="#services">Services</a>
-        <div class="dropdown-content">
-          <a href="pages/service_01.html">Manpower Staffing Services</a>
-          <a href="#">Shutdown & Turnaround Services</a>
-          <a href="#">Payroll Outsourcing Services in Saudi Arabia</a>
-          <a href="#">Hire Welders in Saudi Arabia</a>
-          <a href="#">Industry Specific Recruitment</a>
-          <a href="#">Permanent Recruitment</a>
-          <a href="#">Temporary Staffing</a>
-          <a href="#">Executive Search</a>
-          <a href="#">TRAVEL & TOUR</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#recruitment">Recruitment</a>
-        <div class="dropdown-content">
-          <a href="pages/recruitement_01.html">Recruitment Agency in Saudi Arabia for Foreign Workers</a>
-          <a href="#">Recruitment Agency in Riyadh, Saudi Arabia</a>
-          <a href="#">Recruitment Agency in Jeddah, Saudi Arabia</a>
-          <a href="#">Recruitment Agency in Dammam, Saudi Arabia</a>
-          <a href="#">Recruitment Agency in Al Khobar, Saudi Arabia</a>
-          <a href="#">Labor Outsourcing Company in Saudi Arabia</a>
-          <a href="#">Employee Outsourcing Services Saudi Arabia</a>
-          <a href="#">Manpower Outsourcing in Saudi Arabia</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#services">Industries</a>
-        <div class="dropdown-content">
-          <a href="#">Construction Recruitment Agency</a>
-          <a href="#">Healthcare Recruitment Agency</a>
-          <a href="#">Hospitality Recruitment Agency</a>
-          <a href="#">Banking and Finance Recruitment Agency</a>
-          <a href="#">Education Recruitment Agency in Saudi Arabia</a>
-        </div>
-      </div>
-      <a href="#carears">Latest Jobs openings</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#contact">Contact Us</a>
     </div>
+    <div class="dropdown">
+      <a href="#services">Services</a>
+      <div class="dropdown-content">
+        <a href="/pages/service_01.html">Manpower Staffing Services</a>
+        <a href="#">Shutdown & Turnaround Services</a>
+        <a href="#">Payroll Outsourcing Services in Saudi Arabia</a>
+        <a href="#">Hire Welders in Saudi Arabia</a>
+        <a href="#">Industry Specific Recruitment</a>
+        <a href="#">Permanent Recruitment</a>
+        <a href="#">Temporary Staffing</a>
+        <a href="#">Executive Search</a>
+        <a href="#">TRAVEL & TOUR</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#recruitment">Recruitment</a>
+      <div class="dropdown-content">
+        <a href="pages/recruitement_01.html">Recruitment Agency in Saudi Arabia for Foreign Workers</a>
+        <a href="#">Recruitment Agency in Riyadh, Saudi Arabia</a>
+        <a href="#">Recruitment Agency in Jeddah, Saudi Arabia</a>
+        <a href="#">Recruitment Agency in Dammam, Saudi Arabia</a>
+        <a href="#">Recruitment Agency in Al Khobar, Saudi Arabia</a>
+        <a href="#">Labor Outsourcing Company in Saudi Arabia</a>
+        <a href="#">Employee Outsourcing Services Saudi Arabia</a>
+        <a href="#">Manpower Outsourcing in Saudi Arabia</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#industries">Industries</a>
+      <div class="dropdown-content">
+        <a href="#">Construction Recruitment Agency</a>
+        <a href="#">Healthcare Recruitment Agency</a>
+        <a href="#">Hospitality Recruitment Agency</a>
+        <a href="#">Banking and Finance Recruitment Agency</a>
+        <a href="#">Education Recruitment Agency in Saudi Arabia</a>
+      </div>
+    </div>
+    <a href="#careers">Latest Jobs Openings</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#contact">Contact Us</a>
   </div>
+  <div class="toggle-menu-button">
+    <button id="toggle-menu" class="toggle-menu" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+  </div>
+</div>
+
+<!-- Mobile Navbar -->
+<div class="mobile-navbar">
+  <div class="mobile-logo">Pearlina</div>
+  <div id="mobile-nav-links" class="mobile-nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#recruitment">Recruitment</a>
+    <a href="#industries">Industries</a>
+    <a href="#careers">Latest Jobs Openings</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+  <div class="close-menu-button">
+    <button id="close-menu" onclick="toggleMenu()"><i class="bi bi-x"></i></button>
+  </div>
+</div>
+
   
 
   <div class="carousel">
