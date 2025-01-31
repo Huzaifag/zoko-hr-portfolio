@@ -36,7 +36,7 @@ const slides = document.querySelectorAll('.slide');
       // Animate pillars to reveal the slide
       gsap.to(pillars, {
         scaleX: 0,
-        duration: 2,
+        duration: 1.5,
         stagger: 0.2,
         ease: 'power2.inOut',
         onComplete: () => {
@@ -112,3 +112,13 @@ function toggleMenu() {
     menu.style.display = 'none';
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+
+  dropdownButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.nextElementSibling.classList.toggle("show");
+    });
+  });
+});
