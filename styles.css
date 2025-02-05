@@ -12,7 +12,7 @@
   --section-backgroung :  #e6e4e4;
   --card-heading : #c1f1d8;
   --hero-btn : #05532b;
-  --pillar-color : #012914;
+  --pillar-color : #353839;
   --btn-text : #ffffff;
 }
 body {
@@ -226,8 +226,9 @@ header{
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   z-index: 10;
+  width: 100%;
 }
 
 .card {
@@ -246,6 +247,7 @@ header{
   background-color: rgba(117, 106, 106, 0.1); /* Optional: Slight background */
   z-index: 1; /* Bring the hovered card above others */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Optional: Shadow for lifted feel */
+  cursor: pointer;
 }
 
 .card h3 {
@@ -288,35 +290,24 @@ header{
   align-items: center;
   }
 
-  .hero-btn{
-    position: absolute;
-    top: 40%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:var(--secondary-color); 
-    z-index: 10;
-    padding: 5px;
-    background: transparent;
-    opacity: 1;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
 
   .side-button{
-    padding: 22px 65px;
-    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 5%;
     background-color: var(--hero-btn);
-    border: 2px solid var(--primary-color); 
     color:var(--btn-text);
 
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 15px 45px;
+    border: 2px solid var(--primary-color); 
+    text-align: center;
+    color:var(--secondary-color); 
+    z-index: 10;
   }
 
   .side-button:hover{
