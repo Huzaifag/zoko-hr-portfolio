@@ -263,7 +263,7 @@ header{
 }
 
 .card:hover img {
-  max-height: 150px; /* Expand on hover */
+  max-height: 200px; /* Expand on hover */
   opacity: 1; /* Make visible */
 }
 
@@ -285,6 +285,43 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  }
+
+  .hero-btn{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:var(--secondary-color); 
+    z-index: 10;
+    padding: 5px;
+    background: transparent;
+    opacity: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-button{
+    padding: 22px 65px;
+    display: inline-block;
+    background-color: var(--hero-btn);
+    border: 2px solid var(--primary-color); 
+    color:var(--btn-text);
+
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .side-button:hover{
+    background-color:var(--primary-color); 
+    color:var(--secondary-color);
+    transform: scale(1.05);
   }
 
 .slide-heading h1 {
@@ -1498,6 +1535,10 @@ a strong{
     display: none;
   }
   #contact-form{
+    display: none;
+  }
+
+  .side-button{
     display: none;
   }
 }
