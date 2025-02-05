@@ -263,7 +263,7 @@ header{
 }
 
 .card:hover img {
-  max-height: 200px; /* Expand on hover */
+  max-height: 201px; /* Expand on hover */
   opacity: 1; /* Make visible */
 }
 
