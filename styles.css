@@ -233,26 +233,19 @@ header{
 
 .card {
   background: transparent;
-  border-radius: 10px;
-  width: 200px;
-  text-align: center;
+  width: 300px;
+  padding: 10px;
+  text-align: start;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.6s ease;
   color: rgba(243, 238, 238, 0.6); /* Fallback color if --link-color is undefined */
 }
 
 .card:hover {
   transform: translateY(-10px); /* Lift the hovered card only */
-  background-color: rgba(117, 106, 106, 0.1); /* Optional: Slight background */
   z-index: 1; /* Bring the hovered card above others */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Optional: Shadow for lifted feel */
   cursor: pointer;
-}
-
-.card h3 {
-  margin: 0;
-  padding: 0;
 }
 
 .card img {
@@ -1178,6 +1171,7 @@ max-width: 700px;
   margin: 0;
 }
 
+
 .glance-container {
   gap: 20px
 }
@@ -1196,7 +1190,6 @@ max-width: 700px;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  gap: 40px;
   max-width: 1200px; /* Ensures a nice central alignment */
   width: 100%;
   padding: 0 20px;
@@ -1211,14 +1204,14 @@ max-width: 700px;
 
 .service-section-heading h3 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-family: var(--text-font);
   color: var(--primary-color);
 }
 
 .service-section-heading p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1;
   color: var(--primary-color);
 }
 
@@ -1270,6 +1263,44 @@ max-width: 700px;
   color: #fff;
   transform: scale(1.05);
 }
+
+.testimonial{
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.testimonial-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonial-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.testimonial-text{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-author{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 
 .build-team{
   background-color: var(--hero-btn);
